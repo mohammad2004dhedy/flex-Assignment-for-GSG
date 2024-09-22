@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  height: 70px;
+  background: #444;
+}
+.contentPage {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contentPage .left-side {
+  flex-basis: 68%;
+}
+.contentPage .left-side .Side-head {
+  display: flex;
+  justify-content: space-between;
+}
+.contentPage .left-side .Side-head .tabs {
+  display: flex;
+  column-gap: 10px;
+}
+.contentPage .left-side .Side-head .tabs .tab {
+  background: #999999;
+  width: 150px;
+  height: 30px;
+}
+.contentPage .left-side .Side-head .tabs .tab.active {
+  background: #555;
+}
+.contentPage .left-side .TabContent {
+  width: 100%;
+  height: 300px;
+  background: #555;
+  margin-bottom: 15px;
+}
+.contentPage .left-side .boxes,
+.contentPage .right-side .postsSide .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+.contentPage .left-side .boxes .box {
+  flex-basis: 18.7%;
+}
+.contentPage .left-side .boxes .box .image {
+  width: 100%;
+  height: 130px;
+  background: #999;
+}
+.contentPage .left-side .boxes .box .subtitle {
+  margin-top: 10px;
+}
+.contentPage .left-side .boxes .box .subtitle span {
+  display: inline-block;
+  height: 15px;
+  background: rgb(221, 221, 221);
+}
+.contentPage .left-side .boxes .box .subtitle span:nth-of-type(1) {
+  width: 100%;
+}
+.contentPage .left-side .boxes .box .subtitle span:nth-of-type(2) {
+  width: 68%;
+}
+.contentPage .left-side .boxes .box .subtitle span:nth-of-type(3) {
+  width: 28%;
+}
+.contentPage .left-side .boxes .box .subtitle span:not(:nth-of-type(1)) {
+  margin: 0 1%;
+}
+.contentPage .right-side {
+  flex-basis: 28%;
+}
+
+.contentPage .right-side .tabPart .tabs {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.contentPage .right-side .tabPart .tabs .tab {
+  background: #999999;
+  flex-basis: 30px;
+  height: 24px;
+}
+.contentPage .right-side .tabPart .TabContent {
+  width: 100%;
+  height: 300px;
+  background: #777;
+  margin: 8px 0 15px;
+}
+.contentPage .right-side .postsSide h2 {
+  width: 100%;
+  height: 35px;
+  background: #777;
+}
+.contentPage .right-side .postsSide .boxes .box {
+  flex-basis: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 15px 0;
+  border-bottom: solid 4px #777;
+}
+.contentPage .right-side .postsSide .boxes .box .image {
+  width: 25%;
+  height: 100px;
+  background: #555;
+}
+.contentPage .right-side .postsSide .boxes .box .description {
+  width: 75%;
+}
+.contentPage .right-side .postsSide .boxes .box .description span {
+  margin: 3px 0;
+  width: 100%;
+  display: inline-block;
+  background: rgb(221, 221, 221);
+  height: 15px;
+}
